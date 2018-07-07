@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleInfoView">
+        <attr name="title" format="string"/>
+        <attr name="info" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="MyAlbumEditView">
+        <attr name="noDivider"
+              format="boolean"/>
+        <attr name="noPadding"
+              format="boolean"/>
+        <attr name="albumTitle"
+              format="string"/>
+        <attr name="albumTitlewidth"
+              format="dimension"/>
+        <attr name="numColumns"
+              format="integer"/>
+        <attr name="imgSum"
+              format="integer"/>
+        <attr name="albumEditable"
+              format="boolean"/>
+        <attr name="type"
+              format="integer"/>
+    </declare-styleable>
+</resources>

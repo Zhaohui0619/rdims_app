@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ad_images"
+    android:background="#ffffff"
+    tools:context="com.ctkj.xj_app.app.ExceptionImagesActivity">
+
+<!--    <TextView
+        android:id="@+id/tv_image_path"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+        <GridView
+        android:id="@+id/gv_exception"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="3"
+        android:padding="15dp"
+        android:scrollbars="none"
+        android:verticalSpacing="15dp" />
+
+</android.support.constraint.ConstraintLayout>

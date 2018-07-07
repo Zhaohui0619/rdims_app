@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="rdims"/>
+
+    <version value="5"/>
+
+    <list>
+        <mapping class="com.ctkj.xj_app.bean.UserInfo"/>
+        <mapping class="com.ctkj.xj_app.bean.InspectException"/>
+        <!--<mapping class="com.ctkj.xj_app.bean.InspectFacility"/>-->
+        <mapping class="com.ctkj.xj_app.bean.InspectPlan"/>
+        <mapping class="com.ctkj.xj_app.bean.InspectItem"/>
+        <mapping class="com.ctkj.xj_app.bean.InspectTask"/>
+        <mapping class="com.ctkj.xj_app.bean.InspectRecord"/>
+        <mapping class="com.ctkj.xj_app.bean.ReservoirInfo"/>
+        <mapping class="com.ctkj.xj_app.bean.FacilityNode"/>
+<!--        <mapping class="com.ctkj.xj_app.bean.Reservoir"/>
+        <mapping class="com.ctkj.xj_app.bean.FacilityMapInfo"/>
+        <mapping class="com.ctkj.xj_app.bean.InspectExceptionVoA"/>-->
+
+    </list>
+</litepal>

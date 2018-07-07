@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //调试,日志
+    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'//调试库
+    implementation 'com.orhanobut:logger:2.1.1'//日志
+    implementation 'com.github.markzhai:blockcanary-android:1.5.0'
+    //网络
+    implementation 'com.squareup.okhttp3:okhttp:3.9.0'//网络框架
+    implementation 'com.squareup.picasso:picasso:2.5.2'//网络图片加载
+    //线程管理
+    implementation 'org.greenrobot:eventbus:3.0.0'//事件总线
+    implementation 'com.parse.bolts:bolts-android:1.4.0'//线程管理
+    //工具包
+    implementation 'com.google.guava:guava:23.2-android'//google工具包
+    implementation 'com.google.code.gson:gson:2.8.0'//gson工具包
+
+    implementation 'com.github.chrisbanes.photoview:library:1.2.4'//photoView
+    implementation 'com.library.tangxiaolv:telegramgallery:1.0.3'//图库
+    implementation 'com.yalantis:ucrop:2.2.0'//裁剪图片
+
+    implementation 'com.anthonycr.grant:permissions:1.1.2'//权限管理
+
+    implementation 'com.google.guava:guava:23.2-android'//google工具包
+}

@@ -1,0 +1,81 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+//apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+
+    signingConfigs {
+        config {
+            keyAlias 'inspect'
+            keyPassword '123456'
+            storeFile file('D:/CTKJ/App/code/rdims_app/inspect.jks')
+            storePassword '123456'
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.ctkj.xj_app"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
+        }
+    }
+    buildToolsVersion '26.0.2'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    //抠图工具包
+    implementation 'com.intuit.sdp:sdp-android:1.0.3'
+    //Volley网络包
+    implementation 'com.mcxiaoke.volley:library:1.0.+'
+    //Gson包
+    implementation 'com.google.code.gson:gson:2.8.0'
+    //RecyclerView
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.android.support:design:26.1.0'
+    implementation project(':hdlibrary')
+    implementation project(':MultilevelTreeLibrary')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.6.4'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //google工具包
+    implementation 'com.google.guava:guava:23.2-android'
+    //photoView
+    implementation 'com.github.chrisbanes.photoview:library:1.2.4'
+    //网络图片加载
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    // https://mvnrepository.com/artifact/joda-time/joda-time
+    implementation group: 'joda-time', name: 'joda-time', version: '2.9.9'
+
+    implementation 'com.android.support:multidex:1.0.3'
+    //百分比布局
+    implementation 'com.android.support:percent:26.1.0'
+/*    // https://mvnrepository.com/artifact/de.micromata.jak/JavaAPIforKml
+    compile group: 'de.micromata.jak', name: 'JavaAPIforKml', version: '2.2.1'*/
+    //LitePal数据库
+    implementation 'org.litepal.android:core:2.0.0'
+    //glide 图片加载
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+
+}
+

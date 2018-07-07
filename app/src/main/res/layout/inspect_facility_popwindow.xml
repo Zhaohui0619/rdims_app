@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pw_facility"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/view_dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="5%"
+        android:background="@drawable/ic_dismiss_popwindow" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_inspectionFacility"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="40%"
+        android:layout_below="@+id/view_dismiss" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        android:background="@color/bgCommon"
+        android:layout_below="@+id/rv_inspectionFacility">
+
+    <Button
+        android:id="@+id/btn_startInspect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_solid_blue_100"
+        android:text="开始巡检"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btn_stopInspect"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginLeftPercent="20%"/>
+
+    <Button
+        android:id="@+id/btn_stopInspect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_solid_blue_100"
+        android:text="结束巡检"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_startInspect"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_marginLeftPercent="10%"/>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ctkj.xj_app.app.InspectionFacilitiesActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_facilityMap"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/mv_facilities"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/btn_returnSelf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/ic_return_self" />
+
+        <TextView
+            android:id="@+id/tv_inspected_facility"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bgCommon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:background="@color/bgCommon">
+
+        <Button
+            android:id="@+id/btn_facility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_solid_blue_100"
+            android:gravity="center"
+            android:text="@string/facility_list"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+</LinearLayout>

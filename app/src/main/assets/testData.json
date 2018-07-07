@@ -1,0 +1,250 @@
+[
+  {
+    "id": 64,
+    "pId":null,
+    "reservoirId": 9999,
+    "name": "主坝",
+    "flevel": 1,
+    "ftype": null,
+    "centerPorint": null,
+    "childFacilities": [
+      {
+        "id": 65,
+        "pId":64,
+        "reservoirId": 9999,
+        "name": "坝基和坝区",
+        "flevel": 2,
+        "ftype": null,
+        "centerPorint": null,
+        "childFacilities": [
+          {
+            "id": 66,
+            "pId":65,
+            "reservoirId": 9999,
+            "name": "坝趾近区",
+            "flevel": 3,
+            "ftype": null,
+            "centerPorint": null,
+            "childFacilities": [],
+            "code": null
+          },
+          {
+            "id": 67,
+            "pId":65,
+            "reservoirId": 9999,
+            "name": "两岸端坝",
+            "flevel": 3,
+            "ftype": null,
+            "centerPorint": null,
+            "childFacilities": [],
+            "code": null
+          }
+        ],
+        "code": null
+      },
+      {
+        "id": 72,
+        "pId":64,
+        "reservoirId": 9999,
+        "name": "坝体",
+        "flevel": 2,
+        "ftype": null,
+        "centerPorint": null,
+        "childFacilities": [
+          {
+            "id": 73,
+            "pId":72,
+            "reservoirId": 9999,
+            "name": "排水系统",
+            "flevel": 3,
+            "ftype": null,
+            "centerPorint": null,
+            "childFacilities": [],
+            "code": null
+          },
+          {
+            "id": 75,
+            "pId":72,
+            "reservoirId": 9999,
+            "name": "迎水面",
+            "flevel": 3,
+            "ftype": null,
+            "centerPorint": null,
+            "childFacilities": [],
+            "code": null
+          },
+          {
+            "id": 77,
+            "pId":72,
+            "reservoirId": 9999,
+            "name": "背水面",
+            "flevel": 3,
+            "ftype": null,
+            "centerPorint": null,
+            "childFacilities": [],
+            "code": null
+          },
+          {
+            "id": 76,
+            "pId":72,
+            "reservoirId": 9999,
+            "name": "防浪墙",
+            "flevel": 3,
+            "ftype": null,
+            "centerPorint": null,
+            "childFacilities": [],
+            "code": null
+          },
+          {
+            "id": 74,
+            "pId":72,
+            "reservoirId": 9999,
+            "name": "坝顶",
+            "flevel": 3,
+            "ftype": null,
+            "centerPorint": null,
+            "childFacilities": [],
+            "code": null
+          }
+        ],
+        "code": null
+      },
+      {
+        "id": 68,
+        "pId":64,
+        "reservoirId": 9999,
+        "name": "放水洞",
+        "flevel": 2,
+        "ftype": null,
+        "centerPorint": null,
+        "childFacilities": [
+          {
+            "id": 70,
+            "pId":68,
+            "reservoirId": 9999,
+            "name": "和水盖板",
+            "flevel": 3,
+            "ftype": null,
+            "centerPorint": null,
+            "childFacilities": [],
+            "code": null
+          },
+          {
+            "id": 71,
+            "pId":68,
+            "reservoirId": 9999,
+            "name": "出口",
+            "flevel": 3,
+            "ftype": null,
+            "centerPorint": null,
+            "childFacilities": [],
+            "code": null
+          },
+          {
+            "id": 69,
+            "pId":68,
+            "reservoirId": 9999,
+            "name": "进水段",
+            "flevel": 3,
+            "ftype": null,
+            "centerPorint": null,
+            "childFacilities": [],
+            "code": null
+          }
+        ],
+        "code": null
+      }
+    ],
+    "code": null
+  },
+  {
+    "id": 78,
+    "pId":null,
+    "reservoirId": 9999,
+    "name": "溢洪道",
+    "flevel": 1,
+    "ftype": null,
+    "centerPorint": null,
+    "childFacilities": [
+      {
+        "id": 83,
+        "pId":78,
+        "reservoirId": 9999,
+        "name": "下游河床及坡岸",
+        "flevel": 2,
+        "ftype": null,
+        "centerPorint": null,
+        "childFacilities": [],
+        "code": null
+      },
+      {
+        "id": 79,
+        "pId":78,
+        "reservoirId": 9999,
+        "name": "输水段",
+        "flevel": 2,
+        "ftype": null,
+        "centerPorint": null,
+        "childFacilities": [],
+        "code": null
+      },
+      {
+        "id": 82,
+        "pId":78,
+        "reservoirId": 9999,
+        "name": "溢流面",
+        "flevel": 2,
+        "ftype": null,
+        "centerPorint": null,
+        "childFacilities": [],
+        "code": null
+      },
+      {
+        "id": 80,
+        "pId":78,
+        "reservoirId": 9999,
+        "name": "进水段",
+        "flevel": 2,
+        "ftype": null,
+        "centerPorint": null,
+        "childFacilities": [],
+        "code": null
+      },
+      {
+        "id": 81,
+        "pId":78,
+        "reservoirId": 9999,
+        "name": "消力池",
+        "flevel": 2,
+        "ftype": null,
+        "centerPorint": null,
+        "childFacilities": [],
+        "code": null
+      }
+    ],
+    "code": null
+  },
+  {
+    "id": 84,
+    "pId":null,
+    "reservoirId": 9999,
+    "name": "观测设施",
+    "flevel": 1,
+    "ftype": null,
+    "centerPorint": null,
+    "childFacilities": [
+      {
+        "id": 85,
+        "pId":84,
+        "reservoirId": 9999,
+        "name": "量水堰",
+        "flevel": 2,
+        "ftype": null,
+        "centerPorint": null,
+        "childFacilities": [],
+        "code": null
+      }
+    ],
+    "code": null
+  }
+]

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.ctkj.xj_app.LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_login" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="70dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/user_login"
+        android:textColor="@color/textMain"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_stroke_white_100"
+        android:gravity="center"
+        android:hint="@string/input_username"
+        android:textColor="@color/textMain"
+        android:textColorHint="@color/textHint"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/guideline_start"
+        app:layout_constraintRight_toLeftOf="@id/guideline_end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_stroke_white_100"
+        android:gravity="center"
+        android:hint="@string/input_password"
+        android:inputType="textPassword"
+        android:textColor="@color/textMain"
+        android:textColorHint="@color/textHint"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/guideline_start"
+        app:layout_constraintRight_toLeftOf="@id/guideline_end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <CheckBox
+        android:id="@+id/cb_login"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="8dp"
+        android:checked="false"
+        android:text="@string/login_rememberPwd"
+        android:textColor="@android:color/background_dark"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toRightOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_solid_blue_100"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/guideline_start"
+        app:layout_constraintRight_toLeftOf="@id/guideline_end"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65" />
+
+</android.support.constraint.ConstraintLayout>

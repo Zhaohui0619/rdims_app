@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".app.ReservoirInfoActivity">
+
+    <com.ctkj.xj_app.widget.TitleInfoView
+        android:id="@+id/tv_reservoirName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:info="长滩水库"
+        app:title="名称" />
+
+    <com.ctkj.xj_app.widget.TitleInfoView
+        android:id="@+id/tv_reservoirType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:info="中型、III等"
+        app:title="类型" />
+
+    <com.ctkj.xj_app.widget.TitleInfoView
+        android:id="@+id/tv_reservoirDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        app:info="长滩水库总库容2300万m3，调洪库容240万m3。正常库容2060万m3，死库容350万m3，设计灌溉面积10万亩，长滩水库是一座以灌溉、防洪为主，兼有发电、旅游等综合效益的水利工程。水库枢纽工程由当水建筑物（大坝），泄水建筑物（溢流堰消力池），取水建筑物（塔式竖井），输水建筑物（压力管道）及电站厂房组成。"
+        app:title="简介" />
+
+
+</LinearLayout>

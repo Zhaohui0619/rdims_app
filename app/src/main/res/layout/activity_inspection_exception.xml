@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgCommon"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"  >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/description"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_exception"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="@string/exception_desc"
+            android:theme="@style/MyEditText" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:scrollbarThumbVertical="@color/colorPrimary"
+        android:scrollbarSize="3dp">
+        <com.ctkj.xj_app.widget.MyAlbumEditView
+        android:id="@+id/maev_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:albumTitle="@string/picture" />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/video"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_video_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="35dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_video_preview"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@drawable/icon_addpic_unfocused" />
+
+            <ImageView
+                android:id="@+id/iv_delete_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_video_preview"
+                android:clickable="true"
+                android:src="@drawable/btstate_disconnect" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_take_video"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="45dp"
+            android:background="@drawable/icon_addpic_unfocused" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_solid_blue_100"
+        android:text="@string/save"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

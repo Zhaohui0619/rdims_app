@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gl_main_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".app.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/test_widget_1"
+        style="@style/test_1">
+
+        <RelativeLayout
+            android:id="@+id/test_widget_2"
+            style="@style/test_2">
+
+            <ImageView
+                android:id="@+id/test_widget_10"
+                style="@style/test_10" />
+
+            <TextView
+                android:id="@+id/test_widget_12"
+                style="@style/test_12"
+                android:text="@string/welcome" />
+
+            <TextView
+                android:id="@+id/test_widget_11"
+                style="@style/test_11"
+                android:text="巡检员" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/test_widget_3"
+            style="@style/test_3"
+            android:layout_below="@+id/test_widget_2">
+
+            <ImageView
+                android:id="@+id/test_widget_4"
+                style="@style/test_4"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp" />
+
+            <ImageView
+                android:id="@+id/test_widget_20"
+                style="@style/test_20"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp" />
+
+            <ImageView
+                android:id="@+id/test_widget_22"
+                style="@style/test_22"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp" />
+
+            <ImageView
+                android:id="@+id/test_widget_24"
+                style="@style/test_24" />
+
+            <ImageView
+                android:id="@+id/test_widget_21"
+                style="@style/test_21" />
+
+            <ImageView
+                android:id="@+id/test_widget_23"
+                style="@style/test_23" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

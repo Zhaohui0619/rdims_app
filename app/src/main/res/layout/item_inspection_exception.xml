@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_exception_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="堵塞"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="(有异常)"
+        android:textColor="#ff00"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_exception_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:maxLines="2"
+        android:scrollbars="vertical"
+        android:text="坝体有裂缝"
+        android:textColor="#ff00"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_exception_name" />
+
+    <TextView
+        android:id="@+id/tv_exception_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="查看图片"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_exception_desc"/>
+
+</android.support.constraint.ConstraintLayout>

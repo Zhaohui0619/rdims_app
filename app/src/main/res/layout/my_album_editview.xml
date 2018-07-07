@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="0.1dp"
+    android:paddingLeft="0.1dp"
+    android:paddingTop="0.1dp"
+    app:showDividers="middle">
+
+    <TextView
+        android:id="@+id/view_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="15sp"
+        tools:text="标题" />
+
+    <GridView
+        android:id="@+id/notepad_noScrollgridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:horizontalSpacing="8dp"
+        android:numColumns="auto_fit"
+        android:padding="15dp"
+        android:scrollbars="none"
+        android:verticalSpacing="15dp" />
+
+</android.support.v7.widget.LinearLayoutCompat>

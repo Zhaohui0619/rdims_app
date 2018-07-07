@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgCommon"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/avatar"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp"/>
+
+    </RelativeLayout>
+
+    <com.ctkj.xj_app.widget.TitleInfoView
+        android:id="@+id/tiv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:title="姓名"
+        />
+
+    <com.ctkj.xj_app.widget.TitleInfoView
+        android:id="@+id/tiv_reservoir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:title="水库"
+        />
+
+    <com.ctkj.xj_app.widget.TitleInfoView
+        android:id="@+id/tiv_department"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:title="部门"
+        />
+
+    <com.ctkj.xj_app.widget.TitleInfoView
+        android:id="@+id/tiv_town"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:title="乡镇"
+        />
+
+<!--    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn_sign_out"
+        android:text="@string/sign_out"
+        android:textColor="@android:color/white"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:focusable="true"
+        android:focusableInTouchMode="true"  >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="设置服务器地址"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/et_change_ipAddress"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:theme="@style/MyEditText" />
+
+    </LinearLayout>
+
+</LinearLayout>

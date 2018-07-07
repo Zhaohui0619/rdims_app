@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="inspection_state">
+        <item>正常</item>
+        <item>异常</item>
+    </string-array>
+</resources>
